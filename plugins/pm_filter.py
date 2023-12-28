@@ -1214,16 +1214,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "support_group":
         buttons = [[
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/FilmySpotSupport_bot'),
-           InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/+i-k-rBOg9CE3NGU1')
+           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/FilmySpotSupport_bot')
+  #         InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ', url='https://t.me/+i-k-rBOg9CE3NGU1')
+        ],[
+            InlineKeyboardButton("ɢᴏ ᴛᴏ ɪɴꜱᴛᴀɴᴛᴇᴀʀɴ", url="https://instantearn.in/ref/dhanushrs")
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="◆ ◇ ◇"
+        )
+        await query.message.edit_text(
+            text="◆ ◆ ◇"
+        )
+        await query.message.edit_text(
+            text="◆ ◆ ◆"
+        )
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+            InputMediaPhoto("https://telegra.ph/file/82130ac1a442350946dd9.jpg")
         )
         await query.message.edit_text(
             text=script.GRP_TXT,
@@ -1325,23 +1336,32 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )    
     elif query.data == "help2":
         buttons = [[
-        InlineKeyboardButton('🔳  Pin ', callback_data='pin'),
+        InlineKeyboardButton(' Pin ', callback_data='pin'),
         InlineKeyboardButton(' Ban', callback_data='zombies'),
-        InlineKeyboardButton(' Mute 🔳', callback_data='restric')
+        InlineKeyboardButton(' Mute ', callback_data='restric')
     ],
     [
-        InlineKeyboardButton('🔳 File Store', callback_data='store_file'),
+        InlineKeyboardButton('File Store', callback_data='store_file'),
         InlineKeyboardButton(' Games', callback_data='fun'),
-        InlineKeyboardButton(' Gen Pass 🔳', callback_data='gen_pass')
+        InlineKeyboardButton(' Gen Pass', callback_data='gen_pass')
     ],
     [
-        InlineKeyboardButton('🔳 Report', callback_data='filters'),
-        InlineKeyboardButton(' Share Text 🔳', callback_data='share_txt')
+        InlineKeyboardButton('Report', callback_data='filters'),
+        InlineKeyboardButton(' Share Text', callback_data='share_txt')
     ],
     [
         InlineKeyboardButton('⋞ Back', callback_data='help')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="◆ ◇ ◇"
+        )
+        await query.message.edit_text(
+            text="◆ ◆ ◇"
+        )
+        await query.message.edit_text(
+            text="◆ ◆ ◆"
+        )
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -1369,24 +1389,33 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-        InlineKeyboardButton('🔳 Manual', callback_data='manuelfilter'),
+        InlineKeyboardButton('Manual', callback_data='manuelfilter'),
         InlineKeyboardButton(' Auto', callback_data='autofilter'),
-        InlineKeyboardButton(' Extra 🔳', callback_data='extra')
+        InlineKeyboardButton(' Extra', callback_data='extra')
     ],
     [
-        InlineKeyboardButton('🔳 T-Graph', callback_data='tele'),
+        InlineKeyboardButton(' T-Graph', callback_data='tele'),
         InlineKeyboardButton(' Font', callback_data='font'),
-        InlineKeyboardButton(' Whois 🔳', callback_data='whois')
+        InlineKeyboardButton(' Whois ', callback_data='whois')
     ],
     [
-        InlineKeyboardButton('🔳 Connect', callback_data='coct'),
-        InlineKeyboardButton(' Stick-ID 🔳', callback_data='sticker')
+        InlineKeyboardButton('Connect', callback_data='coct'),
+        InlineKeyboardButton(' Stick-ID ', callback_data='sticker')
     ],
     [
         InlineKeyboardButton('⋞ Back', callback_data='start'),
         InlineKeyboardButton('Next ⋟', callback_data='help2')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="◆ ◇ ◇"
+        )
+        await query.message.edit_text(
+            text="◆ ◆ ◇"
+        )
+        await query.message.edit_text(
+            text="◆ ◆ ◆"
+        )
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
